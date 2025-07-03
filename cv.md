@@ -74,3 +74,7 @@ if __name__ == "__main__":
     PaintApp().run()
 ```
 ---
+
+## Language:
+* English: A2+
+* Russian: Native
