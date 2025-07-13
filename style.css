@@ -102,6 +102,9 @@ body {
     width: 50%;
     margin: 0 auto;
     font-family: Verdana, Futura, sans-serif;
+    -webkit-box-shadow: -1px 1px 28px 5px rgba(82, 84, 85, 0.817);
+    -moz-box-shadow: -1px 1px 28px 5px rgba(82, 84, 85, 0.817);
+    box-shadow: -1px 1px 28px 5px rgba(82, 84, 85, 0.817);
 }
 
 .header {
@@ -225,6 +228,13 @@ body {
     list-style-type: disc;
 }
 
-.code-wrapper [
-    
-]
+.code-wrapper {
+    color: #ffffff;
+    margin: 20px;
+    background-color: #6d6d6d;
+    border-radius: 10px;
+
+    -webkit-box-shadow: 13px 18px 25px 5px rgba(136, 136, 136, 0.31);
+    -moz-box-shadow: 13px 18px 25px 5px rgba(136, 136, 136, 0.31);
+    box-shadow: 13px 18px 25px 5px rgba(136, 136, 136, 0.31);
+}
