@@ -196,3 +196,25 @@ body {
     line-height: 1.6em;
 }
 
+.contact-list-item{
+    
+}
+
+.contact-item-link {
+    padding: 30px;
+    margin: 15px;
+
+    display: block;
+
+    font-size: 1.5em;
+    color: #000;
+    
+    background-color: #fff;
+    border-radius: 100px;
+
+    transition: all 0.5s ease;
+}
+
+.contact-item-link:hover {
+    background-color: orange;
+}
