@@ -11,36 +11,198 @@
         <nav>
             <ul>
                 <li>
-                    <a href="">About me</a>
+                    <a href="">
+                        About me
+                    </a>
                 </li>
                 <li>
-                    <a href="">Contact</a>
+                    <a href="">
+                        Contacts
+                    </a>
                 </li>
                 <li>
-                    <a href="">Skills</a>
+                    <a href="">
+                        Skills
+                    </a>
                 </li>
                 <li>
-                    <a href="">Code example</a>
+                    <a href="">
+                        Code example
+                    </a>
                 </li>
                 <li>
-                    <a href="">Education</a>
+                    <a href="">
+                        Education
+                    </a>
                 </li>
             </ul>
         </nav>
     </header>
     <main>
         <section>
-            <h1>Chorny Vladislaw</h1>
-
+            <img src="" alt="">
+            <h1>
+                Chorny Vladislaw
+            </h1>
+            <p>
+                Python teacher in online school and trainee front-end developer
+            </p>
         </section>
         <section>
-
+            <h2>
+                About me
+            </h2>
+            <p>
+                Hi friend, as you’ve already read at the beginning of my CV, my name is Vlad. I enjoy programming, and I also like teaching others. I teach Python development to children at an online programming school. I’m also interested in 3D modeling, and in the future, I would like to develop in that direction as well. Thank you for paying attention to my CV, and good luck to you going forward!
+            </p>
         </section>
         <section>
-
+            <h2>
+                Contacts
+            </h2>
+            <ul>
+                <li>
+                    <a href="tel:+375447131011">
+                        <span>
+                            Phone:
+                        </span>
+                        +375 (44) 713-10-11
+                    </a>
+                    
+                </li>
+                <li>
+                    <a href="mailto:chernyj.for.learn@gmail.com">
+                        <span>
+                            E-mail:
+                        </span>
+                        chernyj.for.learn@gmail.com
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/Sosiso4nik" target="_blank">
+                        <span>
+                            GitHUB:
+                        </span>
+                        Sosiso4nik
+                    </a>
+                </li>
+                <li>
+                    <a href="https://t.me/@BChernyj">
+                        <span>
+                            Telegram:
+                        </span>
+                        @BChernyj
+                    </a>
+                </li>
+                <li>
+                    <a href="https://discordapp.com/users/300683445552545795/ ">
+                        <span>
+                            Discord:
+                        </span>
+                        vladiiislaw &lpar;Сладкий мишка&rpar;&rpar;
+                    </a>                
+                </li>
+            </ul>
         </section>
         <section>
+            <h2>
+                Skills
+            </h2>
+            <ul>
+                <li>
+                    HTML/CSS
+                </li>
+                <li>
+                    Java BASIC
+                </li>
+                <li>
+                    Python Back-end
+                </li>
+                <li>
+                    Git, GitHub
+                </li>
+                <li>
+                    PyCharm, VS CODE
+                </li>
+                <li>
+                    3D modeling in Blender
+                </li>
+            </ul>
+        </section>
+        <section>
+            <h2>
+                Code example
+            </h2>
+            <pre>
+                <code>
+from kivy.core.window import Window
 
+from kivy.app import App
+from kivy.uix.button import Button
+from kivy.uix.widget import Widget
+from kivy.graphics import &lpar;Color, Ellipse, Rectangle, Line&rpar;
+
+from random import random
+
+class PainterWidget&lpar;Widget&rpar;&colon;
+    def on&lowbar;touch&lowbar;down&lpar;self, touch&rpar;&colon;
+        with self.canvas&colon;
+            Color&lpar;random&lpar;&rpar;,random&lpar;&rpar;,random&lpar;&rpar;,1&rpar;
+            rad &equals; 10
+            Ellipse&lpar;pos&equals;&lpar;touch.x-rad/2,touch.y-rad/2&rpar;, size&equals;&lpar;rad, rad&rpar;&rpar;
+            touch.ud&lsqb;'line'&rsqb;&equals;Line&lpar;points&equals;&lpar;touch.x,touch.y&rpar;, width &equals; 5&rpar;
+
+    def on&lowbar;touch&lowbar;move&lpar;self, touch&rpar;&colon;
+        touch.ud&lsqb;'line'&rsqb;.points &plus;&equals; &lpar;touch.x,touch.y&rpar;
+
+class PaintApp&lpar;App&rpar;&colon;
+    def clear&lowbar;canvas&lpar;self, instance&rpar;&colon;
+        self.painter.canvas.clear&lpar;&rpar;
+
+    def save&lowbar;canvas&lpar;self, instance&rpar;&colon;
+        self.painter.size &equals; &lpar;Window.size&lsqb;0&rsqb;, Window.size&lsqb;1&rsqb;&rpar;
+        self.painter.export&lowbar;to&lowbar;png&lpar;'image.png'&rpar;
+
+    def build&lpar;self&rpar;&colon;
+        parent &equals; Widget&lpar;&rpar;
+        self.painter &equals; PainterWidget&lpar;&rpar;
+        parent.add&lowbar;widget&lpar;self.painter&rpar;
+
+        parent.add&lowbar;widget&lpar;Button&lpar;text&equals;'Clear', on&lowbar;press&equals;self.clear&lowbar;canvas, size&equals;&lpar;100, 50&rpar;&rpar;&rpar;
+        parent.add&lowbar;widget&lpar;Button&lpar;text&equals;'Save', on&lowbar;press&equals;self.save&lowbar;canvas, size&equals;&lpar;100, 50&rpar;, pos &equals; &lpar;100, 0&rpar;&rpar;&rpar;
+        return parent
+
+if &lowbar;&lowbar;name&lowbar;&lowbar; &equals;&equals; &quot;&lowbar;&lowbar;main&lowbar;&lowbar;&quot;&colon;
+    PaintApp&lpar;&rpar;.run&lpar;&rpar;
+                </code>
+            </pre>
+        </section>
+        <section>
+            <h2>
+                Education
+            </h2>
+            <h3>
+                Learn:
+            </h3>
+            <ul>
+                <li>
+                    Branch of the educational institution &quot;Belarusian State Technological University&quot; GOMEL STATE POLYTECHNIC COLLEGE
+                </li>
+                <li>
+                    Python &lpar;self-learn&rpar;
+                </li>
+            </ul>
+            <h3>
+                Language:
+            </h3>
+            <ul>
+                <li>
+                    English A2&plus;
+                </li>
+                <li>
+                    Russianb &lpar;native&rpar;
+                </li>
+            </ul>
         </section>
     </main>
     <footer>
