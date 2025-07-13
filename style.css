@@ -176,7 +176,7 @@ body {
 }
 
 .main-header {
-    font-size: 2.5em;
+    font-size: 3em;
     margin: 0 0 20px 0;
 }
 
@@ -186,7 +186,7 @@ body {
 
 
 .section-header {
-    font-size: 2em;
+    font-size: 2.5em;
     text-align: center;
     margin: 0 0 20px 0;
 }
@@ -194,10 +194,6 @@ body {
 .about-me-text {
     font-size: 1.5em;
     line-height: 1.6em;
-}
-
-.contact-list-item{
-    
 }
 
 .contact-item-link {
@@ -218,3 +214,17 @@ body {
 .contact-item-link:hover {
     background-color: orange;
 }
+
+
+
+.skills-list-item {
+    margin: 15px;
+    padding: 20px;
+
+    font-size: 1.2em;
+    list-style-type: disc;
+}
+
+.code-wrapper [
+    
+]
