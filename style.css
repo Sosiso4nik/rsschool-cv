@@ -1,0 +1,9 @@
+.hello-message {
+    font-family: Verdana, Futura, sans-serif;
+    font-weight: bold;
+    font-size: 2em;
+    color: #1F1F1F;
+    text-align: center;
+
+    margin: auto;
+}
