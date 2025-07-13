@@ -225,7 +225,9 @@ body {
     padding: 20px;
 
     font-size: 1.2em;
-    list-style-type: disc;
+
+    border: 3px solid #fff;
+    border-radius: 100px;
 }
 
 .code-wrapper {
@@ -238,3 +240,55 @@ body {
     -moz-box-shadow: 13px 18px 25px 5px rgba(136, 136, 136, 0.31);
     box-shadow: 13px 18px 25px 5px rgba(136, 136, 136, 0.31);
 }
+
+.education-block-wrapper {
+    margin:20px;
+}
+
+.block-header {
+    font-size: 2em;
+    text-align: center;
+    margin: 0 0 10px 0;
+}
+
+.education-list {
+    border: 2px solid #fff;
+    border-radius: 20px;
+    padding: 5%;
+}
+
+.list-item {
+    list-style-type: disc;
+    margin: 10px 0;
+    font-size: 1.2em;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px;
+    background-color: #30303077;
+}
+
+.footer-item {
+    text-align: center;
+    font-size: 1.5em;
+    width: 33%;
+}
+
+.footer-logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+    transition: transform 0.5s ease;
+}
+
+.footer-logo:hover {
+    transform: scale(120%);
+
+    -webkit-box-shadow: 2px 2px 15px 5px rgba(193, 193, 193, 0.31);
+    -moz-box-shadow: 2px 2px 15px 5px rgba(193, 193, 193, 0.31);
+    box-shadow: 2px 2px 15px 5px rgba(193, 193, 193, 0.31);
+}
+
